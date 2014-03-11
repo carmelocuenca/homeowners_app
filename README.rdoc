@@ -8,6 +8,11 @@ Things you may want to cover:
 * Ruby version
 
 * System dependencies
+To install and include the new gems, run bundle update and bundle install
+$ bundle install --without production
+
+To configure Rails to use RSpec in place of Test::Unit:
+$ rails generate rspec:install
 
 * Configuration
 
@@ -21,7 +26,15 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* To start modify
+$ git checkout -b <branch-name>
+...
+...
+...
+$ git add .
+$ git commit -m "Comments to be commited in the branch"
+$ git checkout master
+$ git merge <branch-name>
 
 
 Please feel free to use a different markup language if you do not plan to run
