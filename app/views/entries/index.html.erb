@@ -1,0 +1,27 @@
+<h1>Entries#show</h1>
+<p>Find me in app/views/entries/show.html.erb</p>
+
+<table id="entries">
+  <tr>
+    <th>ENTRY ID</th>
+    <th>Nombre</th>
+    <th>Fecha movimiento</th>
+    <th>Fecha valor</th>
+    <th>Concepto bancario</th>
+    <th>Importe</th>
+    <th>Oficina</th>
+    <th>Concepto cliente</th>
+  </tr>
+  <% @entries.each do |entry| %>
+    <tr>
+      <td><%= entry.id %></td>
+      <td><%= entry.user.username if entry.user %></td>
+      <td><%= entry.posting_date %></td>
+      <td><%= entry.value_date   %></td>
+      <td><%= entry.concept      %></td>
+      <td><%= entry.amount       %></td>
+      <td><%= entry.office       %></td>
+      <td><%= entry.concept1     %></td>
+    </tr>
+  <% end %>
+</table>

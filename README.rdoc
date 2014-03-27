@@ -11,9 +11,6 @@ Things you may want to cover:
 To install and include the new gems, run bundle update and bundle install
 $ bundle install --without production
 
-To configure Rails to use RSpec in place of Test::Unit:
-$ rails generate rspec:install
-
 * Configuration
 
 * Database creation
